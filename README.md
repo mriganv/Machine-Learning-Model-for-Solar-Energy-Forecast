@@ -21,6 +21,7 @@ After carefully removing certain columns, dataset consists of 20571 entries with
 Further deleted minute column. 
 
 As shown above, there are no missing values in the dataset. The target variable is % baseline.
+
 ![Screenshot 2022-03-06 193758](https://user-images.githubusercontent.com/81407869/156963788-17b77bab-9097-46a5-a5b8-424662a240e3.jpg)
 
 From the correlation plot, sunHour, tempC, FellslikeC, HeadIndexC, WindChillC, humidity, DNI, Cloud Type, Solar Zenith Angle, Cloudcover are some of the correlated features with % baseline. 
