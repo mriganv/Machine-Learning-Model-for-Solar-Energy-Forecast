@@ -50,6 +50,8 @@ When you have two independant variables that are very highly correlated, then de
 
 Based on the Pearson correlation, we are selection columns which are having correlation greater than 0.9 and making a list of those columns to drop. 
 Droping the columns which are in the list from the training and testing dataset. 
+
+
 ![Screenshot 2022-03-06 204728](https://user-images.githubusercontent.com/81407869/156969749-dc43b6fb-f795-4a23-815f-4a2b8f5985cb.jpg)
 
 
