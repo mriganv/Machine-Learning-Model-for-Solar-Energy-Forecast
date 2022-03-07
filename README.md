@@ -99,6 +99,6 @@ The stacking regressor uses the cross_val_predict function which returns for eac
 
 ### Conclusions:
 
-Stacked Ensemble Model and LGBM gave an overall best performance than the Linear Regression Model. 
+Stacked Ensemble Model and LGBM gave an overall best performance with 92% than the Linear Regression Model(73%). 
 
 
