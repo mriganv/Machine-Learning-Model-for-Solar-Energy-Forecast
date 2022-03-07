@@ -13,7 +13,7 @@ The model is trained using real data obtained from three sources
 ## Data Processing
 Available vaiables in the data are explored, visualized and pre-processed before being passed to the machine learning algorithms. 
 
-Data Exploration
+#### Data Exploration
 
 After carefully removing certain columns, dataset consists of 20571 entries with total 38 columns. 
 ![Screenshot 2022-03-06 191400](https://user-images.githubusercontent.com/81407869/156961669-a381e4ce-17e2-41d4-b772-ae84bc9b1041.jpg)
