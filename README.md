@@ -86,7 +86,7 @@ The stacking regressor uses the cross_val_predict function which returns for eac
 
 ![Stacking-model-1-S1](https://user-images.githubusercontent.com/81407869/156971346-4c55614e-26a5-48fb-80a5-f5c06e20bfee.png)
 
-### Model Performance of Stacked Ensemble model on test set
+#### Model Performance of Stacked Ensemble model on test set
 ![Screenshot 2022-03-06 210819](https://user-images.githubusercontent.com/81407869/156971677-72ac32c2-06e0-40f0-aead-4a8d100b7413.jpg)
 
 ###  Light Gradient Boosting Machine — LGBM
