@@ -17,6 +17,7 @@ Available vaiables in the data are explored, visualized and pre-processed before
 
 After carefully removing certain columns, dataset consists of 20571 entries with total 38 columns. 
 ![Screenshot 2022-03-06 191400](https://user-images.githubusercontent.com/81407869/156961669-a381e4ce-17e2-41d4-b772-ae84bc9b1041.jpg)
+
 Further deleted minute column. 
 
 As shown above, there are no missing values in the dataset. The target variable is % baseline.
