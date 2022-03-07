@@ -33,6 +33,8 @@ From the above correlation plot, we can see that hour variable is not related to
 
 ![Screenshot 2022-03-06 200708](https://user-images.githubusercontent.com/81407869/156966621-3bf8a620-ee29-4d41-8835-44f468c0a756.jpg)
 
+![download (1)](https://user-images.githubusercontent.com/81407869/156968574-6ac5d0c3-cd39-476b-9126-52096e9c4873.png)
+
 Additional correlation analysis including newly created features shows a perfect correlation between the cosine and sine of date features than their actual values (Month and Hour). Hence, Month and Hour features are dropped in the modeling process.
 
 ## Data splitting
@@ -42,8 +44,13 @@ Declaring feature vector and target variables, entire dataset is split into 70% 
 ## Feature Selection - Dropping features using Pearson Correlation 
 ![download](https://user-images.githubusercontent.com/81407869/156967485-cd335407-eb16-434a-9d26-2230d8cdc444.png)
 
+When you have two independant variables that are very highly correlated, then definitely we should remove one of them because two variables are so highly correlated they will obviously impart nearly exactly the same information to your regression model. By including both you are actually weakening the model.You are not adding incremental information. Instead, you are infusing your model with noise. Not a good thing.
 
+![Screenshot 2022-03-06 204543](https://user-images.githubusercontent.com/81407869/156969625-7e4de6da-15ac-43c3-9e43-a1c7cc1a7ee9.jpg)
 
+Based on the Pearson correlation, we are selection columns which are having correlation greater than 0.9 and making a list of those columns to drop. 
+Droping the columns which are in the list from the training and testing dataset. 
+![Screenshot 2022-03-06 204728](https://user-images.githubusercontent.com/81407869/156969749-dc43b6fb-f795-4a23-815f-4a2b8f5985cb.jpg)
 
 
 
