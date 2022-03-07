@@ -54,5 +54,45 @@ Droping the columns which are in the list from the training and testing dataset.
 
 ![Screenshot 2022-03-06 204728](https://user-images.githubusercontent.com/81407869/156969749-dc43b6fb-f795-4a23-815f-4a2b8f5985cb.jpg)
 
+## Modeling
+
+Three Models (Linear Regression, Stacked Ensemble Model and Light Gradient Boosting Machine — LGBM) were developed. 
+
+## Model Results:
 
 
+### Linear Regression Model:
+
+
+
+![Screenshot 2022-03-06 205847](https://user-images.githubusercontent.com/81407869/156970726-3249d7cb-a0a6-4c19-a2a4-7f7de9998cd7.jpg)
+
+
+![Screenshot 2022-03-06 205921](https://user-images.githubusercontent.com/81407869/156970788-b54e608f-85ba-48bb-9cf1-34336edc878c.jpg)
+
+### Stacked Enesemble Model:
+
+Hyper-parameter tuning
+
+Each of the models was tuned using the random search cross-validation approach which enables the selection of the best combination of hyper-parameters based on the performance of the model on multiple splits of the training data.
+In particular, 1000 permutations of the hyper-parameters were chosen and applied to 4 splits of the training data. The test data remains unseen and will be used for the final evaluation of the models chosen across different algorithms.
+
+![3-fold-cross-validation-and-final-test-diagram-The-dataset-was-divided-into-four](https://user-images.githubusercontent.com/81407869/156971048-8deec5d7-25fe-4978-979c-6e70bd1b0a78.png)
+
+Model stacking
+Four disparate models (KNN, DNN, RF, and LGBM) were combined using the stacking regressor module in Scikit-learn- python machine learning library. A simple linear regression model was used as the meta-learner and it was trained on 4 fold cross-validated predictions of the base models as well as the original input features.
+The stacking regressor uses the cross_val_predict function which returns for each example in the training data, the prediction that was obtained for that example when it was in the validation set. These predictions across the different base models are used as an input to the meta-learner. This approach reduces the risk of overfitting.
+
+
+![Stacking-model-1-S1](https://user-images.githubusercontent.com/81407869/156971346-4c55614e-26a5-48fb-80a5-f5c06e20bfee.png)
+
+### Model Performance of Stacked Ensemble model on test set
+![Screenshot 2022-03-06 210819](https://user-images.githubusercontent.com/81407869/156971677-72ac32c2-06e0-40f0-aead-4a8d100b7413.jpg)
+
+###  Light Gradient Boosting Machine — LGBM
+
+### LGBM  Model Results
+
+
+
+![Screenshot 2022-03-06 211238](https://user-images.githubusercontent.com/81407869/156971998-ec7a0b55-da3e-4c57-996d-56c1332c4027.jpg)
