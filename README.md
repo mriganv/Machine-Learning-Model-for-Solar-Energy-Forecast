@@ -1,7 +1,7 @@
 # Machine-Learning-Model-for-Solar-Energy-Forecast
 ## About
 
-This is a short data science project about developing a machine learning regression model to accurately predict the rate of solar output measured as a % of baseline of capacity. 
+This is a data science project about developing a machine learning regression model to accurately predict the rate of solar output measured as a % of baseline of capacity. 
 
 ## Data 
 
