@@ -3,7 +3,7 @@
 
 This is a data science project about developing a machine learning regression model to accurately predict the rate of solar output measured as a % of baseline of capacity. 
 
-## Data 
+## Data Collection
 
 The model is trained using real data obtained from three sources 
 * A dataset which measures the rate of solar output measured as a % of baseline of capacity between 2014 and 2018, collected from real-life example. 
